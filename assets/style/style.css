@@ -192,14 +192,22 @@ a {
 }
 
 #abt-us .abt-us-img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #abt-us .left {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50rem;
-          flex: 1 0 50rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #abt-us .right {
@@ -289,7 +297,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -405,7 +415,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  justify-items: center;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -413,9 +425,9 @@ a {
 }
 
 #packages .package {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 30rem;
-          flex: 1 0 30rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30rem;
+          flex: 0 0 30rem;
   min-height: 39rem;
   border-radius: 5px;
   overflow: hidden;
@@ -434,6 +446,8 @@ a {
   margin: 1rem;
   -webkit-box-shadow: 2px 2px 18px rgba(201, 202, 203, 0.27);
           box-shadow: 2px 2px 18px rgba(201, 202, 203, 0.27);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #packages .package h3, #packages .package p, #packages .package a {
@@ -455,12 +469,24 @@ a {
 }
 
 #packages .package img {
+  height: auto;
   max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#packages .package:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 10px 20px rgba(186, 186, 186, 0.296);
+          box-shadow: 0px 10px 20px rgba(186, 186, 186, 0.296);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #contact {
@@ -509,8 +535,8 @@ a {
 
 #contact .right, #contact .left {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 40rem;
-          flex: 1 0 40rem;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
 }
 
 #contact .left {
@@ -593,10 +619,14 @@ a {
 #contact .contact-deets .box:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-  -webkit-box-shadow: 0px 10px 20px rgba(186, 186, 186, 0.296);
-          box-shadow: 0px 10px 20px rgba(186, 186, 186, 0.296);
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(186, 186, 186, 0.296);
+          box-shadow: 0px 10px 20px -5px rgba(186, 186, 186, 0.296);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+#contact .contact-deets .box img {
+  width: 3rem;
 }
 
 #contact .contact-deets .box-1 {
@@ -651,23 +681,113 @@ a {
           justify-content: space-evenly;
 }
 
+#testimonials {
+  min-height: 40vh;
+  background-color: #0E9CFC;
+  padding: 3rem 0;
+}
+
+#testimonials h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+#testimonials .testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  overflow: visible;
+}
+
+#testimonials .testimonial {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50rem;
+          flex: 1 0 50rem;
+  background-color: #0c95f0;
+  padding: 1.2rem;
+  min-height: 220px;
+  border-radius: 5px;
+  position: relative;
+  overflow: visible !important;
+  color: #232528;
+}
+
+#testimonials .testimonial .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+  overflow: visible;
+}
+
+#testimonials .testimonial .header img {
+  width: 8rem;
+  height: auto;
+  margin-right: 2rem;
+}
+
+#testimonials .testimonial .header h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#testimonials .testimonial .header p {
+  color: #fff;
+}
+
 @media screen and (max-width: 500px) {
   html {
     font-size: 50%;
   }
+  #abt-us h2 {
+    font-size: calc(2rem + 3vh);
+    font-weight: bold;
+    color: #232528;
+    margin-bottom: 3rem;
+  }
+  #abt-us h2::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #0E9CFC;
+    display: inline-block;
+    margin-left: 2rem;
+  }
   #services .service {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 40rem;
-            flex: 1 0 40rem;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
     height: 200px;
+  }
+  #packages .title h2 {
+    font-size: 4rem;
+  }
+  #packages .title h2::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+    background-color: #0E9CFC;
+    margin-right: 2rem;
   }
   #packages .package {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 40rem;
-            flex: 1 0 40rem;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
   }
   #packages .title p {
     max-width: 100%;
+  }
+  #contact .title h2 {
+    font-size: calc(2rem + 2vh);
+  }
+  #contact .title h2::after {
+    width: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
