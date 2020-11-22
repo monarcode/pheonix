@@ -859,7 +859,7 @@ a {
     margin: 2rem 0;
   }
   #header {
-    background: url("../img/header-bg-mobile.png") no-repeat center/cover;
+    background: url("../img/header-bg-mobile.pngfixed") no-repeat center/cover;
   }
   #abt-us h2 {
     font-size: calc(2rem + 3vh);
