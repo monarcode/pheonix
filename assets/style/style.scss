@@ -56,6 +56,10 @@ a {
         }
     }
 
+    .tog {
+        width: 30px;
+    }
+
     .navbar-nav {
         flex-grow: 1;
         align-items: center;
@@ -561,8 +565,9 @@ a {
 
             img {
                 width: 8rem;
-                height: auto;
+                height: 8rem;
                 margin-right: 2rem;
+                object-fit: cover;
             }
 
             h3 {
@@ -578,9 +583,100 @@ a {
     }
 }
 
+#footer {
+    min-height: 50vh;
+    background-color: #1E2833;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    padding: 3rem 0;
+
+    h3 {
+        color: $blue;
+    }
+
+    .outer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .call_out {
+        flex: 0 1 30rem;
+        align-self: start;
+        padding: 2rem 0;
+        text-align: center;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: $white;
+        }
+
+        button {
+            border: none;
+            padding: 1rem 2rem;
+            background-color: $blue;
+            border-radius: 5px;
+            margin-top: 1rem;
+            color: $white;
+        }
+    }
+
+    .site_links {
+        flex: 1 0 50rem;
+        display: flex;
+        align-self: stretch;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 2rem 0;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
+    
+    ol {
+        list-style: none;
+
+        li {
+            margin: 2rem 0;
+        }
+    }
+
+    .last-line {
+        margin: 1rem 0;
+
+        a, img {
+            margin: 0 1rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+    }
+}
+
 @media screen and (max-width: 500px){
     html {
         font-size: 50%;
+    }
+
+    #nav {
+        .nav-link:nth-child(1) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .nav-link {
+            margin: 2rem 0;
+        }
+    }
+
+    #header {
+        background: url('../img/header-bg-mobile.svg') no-repeat center/cover;
     }
 
     #abt-us {
