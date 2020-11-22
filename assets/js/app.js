@@ -31,5 +31,11 @@ window.onload = (event) => {
                 items:3
             }
         }
-    })
+    });
+
+    AOS.init({
+        delay: 50,
+        duration: 600,
+        easing: 'ease-in-out'
+    });
 }

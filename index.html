@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/style/style.css">
     <title>Phoenix Financials</title>
 </head>
 <body>
     <!-- nav -->
-    <nav id="nav" class="navbar navbar-expand-lg">
+    <nav id="nav" class="navbar navbar-expand-lg" data-aos="fade">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logo.svg" alt="" class="white">
@@ -33,7 +34,7 @@
     <!-- nav end -->
 
     <!-- header -->
-    <header id="header">
+    <header id="header" data-aos="fade">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 inner">
@@ -49,12 +50,12 @@
 
     <!-- about us -->
     <section id="abt-us">
-        <div class="container outer">
-            <div class="left">
+        <div class="container outer" data-aos="fade-up">
+            <div class="left" data-aos="fade-left">
                 <img src="./assets/img/abt-us-img.png" alt="" class="img-fluid abt-us-img">
             </div>
             <div class="right">
-                <div class="inner">
+                <div class="inner" data-aos="fade-right">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A massa lorem ut facilisi. Eu posuere elementum purus interdum urna. Et amet nulla diam non eget morbi. Risus tellus luctus suscipit congue vitae adipiscing tortor dignissim euismod. Elementum ullamcorper nisi, turpis vitae eleifend non, viverra. Sit interdum tortor netus quis imperdiet luctus leo. Sit sed purus, et eu mattis ante aliquet auctor dolor. Facilisis placerat a semper aliquet malesuada volutpat nunc quisque proin. Purus id ornare at eu, varius diam, eu. Dictumst amet id in faucibus cursus volutpat mauris, mauris tincidunt. Rhoncus, donec ac metus nec. Id ultricies et erat cursus varius sit enim sit feugiat. Volutpat quis tristique nec sem a.<br><br>
 
@@ -69,10 +70,10 @@
 
     <!-- services -->
     <section id="services">
-        <div class="container outer">
-            <h2>Our Services</h2>
+        <div class="container outer" data-aos="fade-up">
+            <h2 data-aos="fade-left">Our Services</h2>
             <div class="services">
-                <div class="service">
+                <div class="service" data-aos="fade-right">
                     <div class="title">
                         <img src="./assets/img/services-ic.svg" alt="icon">
                         <h3>Title</h3>
@@ -82,7 +83,7 @@
 
                     <span><a href="#">Get Started <img src="./assets/img/arrow-right.svg"></a></span>    
                 </div>
-                <div class="service">
+                <div class="service" data-aos="fade-right">
                     <div class="title">
                         <img src="./assets/img/services-ic.svg" alt="icon">
                         <h3>Title</h3>
@@ -92,7 +93,7 @@
 
                     <span><a href="#">Get Started <img src="./assets/img/arrow-right.svg"></a></span>    
                 </div>
-                <div class="service">
+                <div class="service" data-aos="fade-right">
                     <div class="title">
                         <img src="./assets/img/services-ic.svg" alt="icon">
                         <h3>Title</h3>
@@ -102,7 +103,7 @@
 
                     <span><a href="#">Get Started <img src="./assets/img/arrow-right.svg"></a></span>    
                 </div>
-                <div class="service">
+                <div class="service" data-aos="fade-right">
                     <div class="title">
                         <img src="./assets/img/services-ic.svg" alt="icon">
                         <h3>Title</h3>
@@ -121,13 +122,13 @@
 
     <!-- packages -->
     <section id="packages">
-        <div class="container outer">
-            <div class="title">
+        <div class="container outer" data-aos="fade-up">
+            <div class="title" data-aos="fade-right">
                 <h2>Our Packages</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
             </div>
             <div class="packages">
-                <div class="package">
+                <div class="package" data-aos="fade-left">
                     <img src="./assets/img/packages-top-img.svg" alt="img">
                     <h3>Title</h3>
                     <div class="deets">
@@ -135,7 +136,7 @@
                         <a href="#">Get Started</a>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-aos="fade-left" data-aos-delay="150">
                     <img src="./assets/img/packages-top-img.svg" alt="img">
                     <h3>Title</h3>
                     <div class="deets">
@@ -143,7 +144,7 @@
                         <a href="#">Get Started</a>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-aos="fade-left" data-aos-delay="200">
                     <img src="./assets/img/packages-top-img.svg" alt="img">
                     <h3>Title</h3>
                     <div class="deets">
@@ -158,16 +159,16 @@
 
     <!-- contact us -->
     <section id="contact">
-        <div class="container outer">
+        <div class="container outer" data-aos="fade-up">
             <div class="left">
-                <img src="./assets/img/map.png" alt="" class="map">
+                <img src="./assets/img/map.png" alt="" class="map" data-aos="fade-left">
             </div>
-            <div class="right">
+            <div class="right" data-aos="fade-right">
                 <div class="title">
                     <h2>Contact Us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                 </div>
-                <div class="contact-deets">
+                <div class="contact-deets" data-aos="fade-up">
                     <div class="box box-1">
                         <div class="title">
                             <img src="./assets/img/home.svg" alt="">
@@ -200,10 +201,10 @@
 
     <!-- testimonials -->
     <section id="testimonials">
-        <div class="container outer">
-            <h2>Testimonials</h2>
+        <div class="container outer" data-aos="fade-up">
+            <h2 data-aos="fade-left">Testimonials</h2>
             <div class="testimonials owl-carousel owl-theme">
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-right">
                     <div class="header">
                         <img src="./assets/img/Rectangle 23.png" alt="">
                         <div class="title">
@@ -215,7 +216,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-right">
                     <div class="header">
                         <img src="./assets/img/Rectangle 23-1.png" alt="">
                         <div class="title">
@@ -227,7 +228,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-right">
                     <div class="header">
                         <img src="./assets/img/Rectangle 23-2.png" alt="">
                         <div class="title">
@@ -246,8 +247,8 @@
 
     <!-- footer -->
     <footer id="footer">
-        <div class="container outer">
-            <div class="call_out">
+        <div class="container outer" data-aos="fade-up">
+            <div class="call_out" data-aos="fade-down">
                 <h3>Invest with us Today</h3>
                 <button>Get Started Now</button>
             </div>
@@ -300,6 +301,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>
