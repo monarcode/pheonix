@@ -3,6 +3,7 @@ window.onload = (event) => {
     this.scrollY > 100 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
     var device = navigator.userAgent;
     var tog = document.getElementById("#tog");
+    const accordion = document.getElementsByClassName('faq');
 
     window.onscroll = ()=> {
         this.scrollY > 100 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
@@ -38,4 +39,10 @@ window.onload = (event) => {
         duration: 600,
         easing: 'ease-in-out'
     });
+
+    for (i = 0; i<accordion.length; i++){
+        accordion[i].addEventListener('click', function(){
+            this.classList.toggle('active');
+        });
+    }
 }

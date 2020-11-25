@@ -1,0 +1,211 @@
+$blue: #0E9CFC;
+$black: #232528;
+$light-blue: #EAF6FF;
+$grey: #636366;
+$white: #fff;
+
+#nav {
+    // position: static;
+
+    a.nav-link {
+        color: $grey;
+        font-size: 1.4rem;
+    }
+
+    .navbar-brand {
+        .colored {
+            display: unset;
+        }
+    }
+
+    .nav-link:nth-child(6) {
+        background-color: #dfdfdf;
+        color: $grey;
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}
+
+#nav.scroll {
+    .nav-link:nth-child(6) {
+        background-color: transparent;
+        color: $blue;
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}
+
+#header {
+    min-height: 70vh;
+    background: #EBEEED;
+    display: flex;
+    align-items: center;
+
+    .outer {
+        display: grid;
+        place-items: center;
+    }
+
+    .header-wave {
+        position: absolute;
+    }
+
+    h1 {
+        color: $black;
+        font-size: 5rem;
+        font-weight: bold;
+
+        span {
+            color: $blue;
+        }
+    }
+
+    p {
+        color: $grey;
+        width: 40%;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .cta {
+        padding: 1rem 2rem;
+        background-color: $blue;
+        color: $white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+}
+
+#faqs {
+    min-height: 110vh;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        color: $black;
+        font-size: 4rem;
+        font-weight: bold;
+
+        span {
+            color: $blue;
+        }
+    }
+
+    p {
+        color: $grey;
+        width: 60%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .faqs-left {
+        position: relative;
+
+        img {
+            position: relative;
+            bottom: 0;
+        }
+    }
+
+    .accordions {
+        max-width: 100%;
+
+        .faq {
+            position: relative;
+            margin: 1rem 2rem;
+        }
+
+        .question {
+            position: relative;
+            padding: 2rem 0;
+            color: $black;
+            border-bottom: 2px solid #C7C7CC;
+            cursor: pointer;
+
+            &::before {
+                content: url('../img/dot.svg');
+                margin-right: 2rem;
+                transition: 0.2s all ease-in-out;
+            }
+        }
+
+        .response {
+            color: $blue;
+            position: relative;
+            height: 0;
+            padding: 1rem 2rem;
+            transition: 0.2s all ease-in-out;
+            overflow: hidden;
+            overflow-y: auto;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .faq.active {
+            .question {
+
+                &::before {
+                    content: url('../img/dot-blue.svg');
+                    transition: 0.2s all ease-in-out;
+                }
+            }
+            .response {
+                height: 150px;
+                padding: 1rem 2rem;
+                visibility: visible;
+                transition: 0.2s all ease-in-out;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#contact {
+    padding: 2rem 0;
+
+    .outer {
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+@media screen and (max-width: 500px){
+    #nav {
+        .navbar-brand {
+            .colored {
+            max-width: 150px;
+            }
+        }
+    }
+
+    #header {
+        p {
+            width: 100%;
+        }
+    }
+
+    #faqs {
+        .title {
+            p {
+                width: 100%;
+            }
+        }
+    }
+}

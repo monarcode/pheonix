@@ -55,6 +55,7 @@ a {
 }
 
 #nav .navbar-nav {
+  font-size: 1.4rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -75,7 +76,7 @@ a {
   margin-left: auto;
 }
 
-#nav .nav-link:nth-child(5) {
+#nav .nav-link:nth-child(6) {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -84,7 +85,7 @@ a {
   transition: 0.2s all ease-in;
 }
 
-#nav .nav-link:nth-child(5):hover {
+#nav .nav-link:nth-child(6):hover {
   background-color: #0E9CFC;
   -webkit-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;
@@ -116,13 +117,12 @@ a {
   display: none;
 }
 
-#nav.scroll .nav-link:nth-child(5) {
+#nav.scroll .nav-link:nth-child(6) {
   background-color: transparent;
-  border: 2px solid #0E9CFC;
   color: #0E9CFC;
 }
 
-#nav.scroll .nav-link:nth-child(5):hover {
+#nav.scroll .nav-link:nth-child(6):hover {
   background-color: #0E9CFC;
   color: #fff;
 }
@@ -161,6 +161,8 @@ a {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 5;
+  -webkit-animation: mouse 2s ease-in-out infinite alternate;
+          animation: mouse 2s ease-in-out infinite alternate;
 }
 
 #header .inner {
@@ -905,6 +907,36 @@ a {
   }
   #contact .title h2::after {
     width: 60px;
+  }
+}
+
+@-webkit-keyframes mouse {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes mouse {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */
