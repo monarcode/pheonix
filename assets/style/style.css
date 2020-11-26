@@ -91,7 +91,7 @@ a {
   transition: 0.2s all ease-out;
 }
 
-#nav.scroll {
+#nav.scroll, #nav.active-show {
   background-color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -99,30 +99,30 @@ a {
           box-shadow: 0 5px 30px rgba(29, 29, 29, 0.227);
 }
 
-#nav.scroll a {
+#nav.scroll a, #nav.active-show a {
   color: #636366;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-#nav.scroll a:hover, #nav.scroll a .active {
+#nav.scroll a:hover, #nav.scroll a .active, #nav.active-show a:hover, #nav.active-show a .active {
   color: #0E9CFC;
 }
 
-#nav.scroll .navbar-brand .colored {
+#nav.scroll .navbar-brand .colored, #nav.active-show .navbar-brand .colored {
   display: inline;
 }
 
-#nav.scroll .navbar-brand .white {
+#nav.scroll .navbar-brand .white, #nav.active-show .navbar-brand .white {
   display: none;
 }
 
-#nav.scroll .nav-link:nth-child(6) {
+#nav.scroll .nav-link:nth-child(6), #nav.active-show .nav-link:nth-child(6) {
   background-color: transparent;
   color: #0E9CFC;
 }
 
-#nav.scroll .nav-link:nth-child(6):hover {
+#nav.scroll .nav-link:nth-child(6):hover, #nav.active-show .nav-link:nth-child(6):hover {
   background-color: #0E9CFC;
   color: #fff;
 }

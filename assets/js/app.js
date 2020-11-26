@@ -2,11 +2,17 @@ window.onload = (event) => {
     const navbar = document.querySelector(".navbar");
     this.scrollY > 100 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
     var device = navigator.userAgent;
-    var tog = document.getElementById("#tog");
+    var tog = document.getElementById("tog");
     const accordion = document.getElementsByClassName('faq');
 
     window.onscroll = ()=> {
         this.scrollY > 100 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
+    }
+
+    if (window.scrollY < 100){
+        tog.addEventListener("click",function(){
+            navbar.classList.toggle('active-show');
+        })
     }
 
     console.log(device);
@@ -15,6 +21,7 @@ window.onload = (event) => {
         target: '#nav'
     })
 
+    // testimonials
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:20,
@@ -34,12 +41,7 @@ window.onload = (event) => {
         }
     });
 
-    AOS.init({
-        delay: 50,
-        duration: 600,
-        easing: 'ease-in-out'
-    });
-
+    // accordion
     for (i = 0; i<accordion.length; i++){
         accordion[i].addEventListener('click', function(){
             this.classList.toggle('active');

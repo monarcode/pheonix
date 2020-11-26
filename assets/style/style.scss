@@ -95,7 +95,7 @@ a {
     }
 }
 
-#nav.scroll {
+#nav.scroll, #nav.active-show {
     background-color: $white;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 5px 30px rgba(29, 29, 29, 0.227);
