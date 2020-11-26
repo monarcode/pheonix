@@ -49,13 +49,21 @@ window.onload = (event) => {
     }
 
     // scroll animations
+    ScrollReveal().reveal('#header', {
+        delay: 50,
+        duration: 1000,
+        easing: 'ease-in-out',
+        reset: false,
+        cleanup: true
+    });
     ScrollReveal().reveal('.right', {
         delay: 300,
         duration: 1000,
         easing: 'ease-in-out',
         distance: '50px',
         origin: 'left',
-        reset: true
+        reset: false,
+        cleanup: true
     });
     ScrollReveal().reveal('.left', {
         delay: 300,
@@ -63,7 +71,8 @@ window.onload = (event) => {
         easing: 'ease-in-out',
         distance: '50px',
         origin: 'right',
-        reset: true
+        reset: false,
+        cleanup: true
     });
     ScrollReveal().reveal('.service, .package', {
         delay: 100,
@@ -72,12 +81,14 @@ window.onload = (event) => {
         distance: '50px',
         origin: 'bottom',
         interval: 500,
-        reset: true
+        reset: false,
+        cleanup: true
     });
     ScrollReveal().reveal('#packages', {
         delay: 100,
         duration: 1000,
         easing: 'ease-in-out',
-        reset: true
+        reset: false,
+        cleanup: true
     });
 }
