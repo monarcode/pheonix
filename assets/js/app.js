@@ -47,4 +47,37 @@ window.onload = (event) => {
             this.classList.toggle('active');
         });
     }
+
+    // scroll animations
+    ScrollReveal().reveal('.right', {
+        delay: 300,
+        duration: 1000,
+        easing: 'ease-in-out',
+        distance: '50px',
+        origin: 'left',
+        reset: true
+    });
+    ScrollReveal().reveal('.left', {
+        delay: 300,
+        duration: 1000,
+        easing: 'ease-in-out',
+        distance: '50px',
+        origin: 'right',
+        reset: true
+    });
+    ScrollReveal().reveal('.service, .package', {
+        delay: 100,
+        duration: 1000,
+        easing: 'ease-in-out',
+        distance: '50px',
+        origin: 'bottom',
+        interval: 500,
+        reset: true
+    });
+    ScrollReveal().reveal('#packages', {
+        delay: 100,
+        duration: 1000,
+        easing: 'ease-in-out',
+        reset: true
+    });
 }
