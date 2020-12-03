@@ -101,10 +101,11 @@ $white: #fff;
     .policies {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
     }
 
     .policy {
+        margin-bottom: 3rem;
+
         h2 {
             font-size: 4rem;
             margin-bottom: 2rem;
@@ -112,6 +113,16 @@ $white: #fff;
 
         p {
             color: #7e7e7e;
+        }
+    }
+
+    @supports (gap:3rem){
+        .policies {
+            gap: 3rem;
+        }
+
+        .policy {
+            margin-bottom: 0;
         }
     }
 }

@@ -111,7 +111,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3rem;
+}
+
+#policy .policy {
+  margin-bottom: 3rem;
 }
 
 #policy .policy h2 {
@@ -121,5 +124,14 @@
 
 #policy .policy p {
   color: #7e7e7e;
+}
+
+@supports (gap: 3rem) {
+  #policy .policies {
+    gap: 3rem;
+  }
+  #policy .policy {
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=policy.css.map */
