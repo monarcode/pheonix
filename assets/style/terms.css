@@ -1,0 +1,125 @@
+#nav a.nav-link {
+  color: #636366;
+  font-size: 1.4rem;
+}
+
+#nav .navbar-brand .colored {
+  display: unset;
+}
+
+#nav .nav-link:nth-child(6) {
+  background-color: #dfdfdf;
+  color: #636366;
+}
+
+#nav .nav-link:nth-child(6):hover {
+  background-color: #0E9CFC;
+  color: #fff;
+}
+
+#nav.scroll .nav-link:nth-child(6) {
+  background-color: transparent;
+  color: #0E9CFC;
+}
+
+#nav.scroll .nav-link:nth-child(6):hover {
+  background-color: #0E9CFC;
+  color: #fff;
+}
+
+#header {
+  min-height: 50vh;
+  background: #EBEEED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .outer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#header .header-wave {
+  position: absolute;
+}
+
+#header h1 {
+  color: #232528;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#header h1 span {
+  color: #0E9CFC;
+}
+
+#header p {
+  color: #636366;
+  width: 40%;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#header .cta {
+  padding: 1rem 2rem;
+  background-color: #0E9CFC;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: 0.2s ease-in-out all;
+  transition: 0.2s ease-in-out all;
+}
+
+#header .cta:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 10px 20px -10px #049bffaf;
+          box-shadow: 0 10px 20px -10px #049bffaf;
+  -webkit-transition: 0.2s ease-in-out all;
+  transition: 0.2s ease-in-out all;
+}
+
+#terms {
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#terms .terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+#terms .term h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+#terms .term p {
+  color: #7e7e7e;
+}
+/*# sourceMappingURL=terms.css.map */

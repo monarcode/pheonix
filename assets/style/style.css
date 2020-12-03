@@ -844,6 +844,7 @@ a {
 
 #footer .last-line a, #footer .last-line img {
   margin: 0 1rem;
+  text-decoration: none;
 }
 
 #footer .last-line .social-links {
